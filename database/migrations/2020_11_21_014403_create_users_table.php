@@ -15,8 +15,12 @@ class CreateUsersTable extends Migration
     {
         Schema::create('users', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name')->nullable();;
-            $table->string('sobrenome')->nullable();;
+            $table->string('name')->nullable();
+            $table->string('sobrenome')->nullable();
+
+            $table->integer('id_zona')->unsigned();
+            $table->foreign('id_zona')->references('id')->on('zonas')->onDelete('cascade');
+
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');

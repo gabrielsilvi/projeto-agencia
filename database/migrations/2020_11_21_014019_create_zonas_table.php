@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreatePacotesTable extends Migration
+class CreateZonasTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,9 @@ class CreatePacotesTable extends Migration
      */
     public function up()
     {
-        Schema::create('pacotes', function (Blueprint $table) {
+        Schema::create('zonas', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('preco');
-            $table->string('img');
-            $table->integer('pontoTuristico_id')->unsigned();
-            $table->foreign('pontoTuristico_id')->references('id')->on('ponto_turisticos')->onDelete('cascade');
+            $table->enum('nomeZona',['frio','urbanismo','sol/praia','saude','aventura','rural','ecoturismo','cultural','esporte']);
             $table->timestamps();
         });
     }
@@ -30,6 +27,6 @@ class CreatePacotesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('pacotes');
+        Schema::dropIfExists('zonas');
     }
 }
