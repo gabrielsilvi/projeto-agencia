@@ -29,13 +29,36 @@
                 <img src="{{url('assets/img/logo.png')}}" alt="Logo Agencia" class="logo">
             </div>
             
-            
+            <nav class="menu">
+                <ul>
+                    <li>
+                        <a href="">Home</a>
+                    </li>
+                    <li>
+                        <a href="?page=package">Pacotes</a>
+                    </li>
+                    <li>
+                        <a href="?page=passagens">Passagens</a>
+                    </li>
+                    <li>
+                        <a href="?page=about">Sobre</a>
+                    </li>
+                </ul>
+            </nav>
 
-           
+            <div>
+                <a href="{{route('login')}}">login/register</a>
+            </div>
         </div>        
     </header>
     <!-- final do reader -->
- 
+    <section class="slide background-parallax-slide">
+        <div class="container text-center ">
+            <h1 class="titulo-slide">Agência de Viagens</h1>
+            <p class="descricao-slide">Agência de viagens utilizando mecanismo de inteligência artificial para sistema de recomendação</p>
+            <a href="" class="btn-saiba-mais">Saiba Mais</a>
+        </div>
+    </section>
     @yield('content')
     <!-- final section slide -->
     

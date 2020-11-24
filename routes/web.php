@@ -8,4 +8,8 @@ use Illuminate\Support\Facades\Route;
 //     return view('welcome');
 // });
 
-Route::get('/', 'HomeController@index');
+
+Auth::routes();
+
+Route::get('/', 'IndexController@index')->name('index');
+// Route::get('logado', 'logadoController')->name('index');
