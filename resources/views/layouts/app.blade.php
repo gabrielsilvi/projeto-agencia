@@ -23,15 +23,10 @@
 <body>
     <header class="header">
         <div class="container">
-            <h1 class="oculta">Agencia Viagens</h1>
-
             <div class="logo">
                 <img src="{{url('assets/img/logo.png')}}" alt="Logo Agencia" class="logo">
             </div>
-            
-            
-
-           
+            <h1>Agência de Viagens</h1>
         </div>        
     </header>
     <!-- final do reader -->

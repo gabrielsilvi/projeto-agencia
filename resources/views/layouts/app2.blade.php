@@ -46,7 +46,7 @@
                 </ul>
             </nav>
 
-            <div>
+            <div class="button-login">
                 <a href="{{route('login')}}">login/register</a>
             </div>
         </div>        

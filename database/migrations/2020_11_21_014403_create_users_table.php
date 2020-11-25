@@ -17,10 +17,6 @@ class CreateUsersTable extends Migration
             $table->increments('id');
             $table->string('name')->nullable();
             $table->string('sobrenome')->nullable();
-
-            $table->integer('id_zona')->unsigned()->nullable();
-            $table->foreign('id_zona')->references('id')->on('zonas')->onDelete('cascade')->nullable();
-
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
