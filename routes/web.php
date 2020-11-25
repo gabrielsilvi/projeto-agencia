@@ -12,4 +12,6 @@ use Illuminate\Support\Facades\Route;
 Auth::routes();
 
 Route::get('/', 'IndexController@index')->name('index');
-// Route::get('logado', 'logadoController');
+Route::group(['prefix'=>'/', 'middleware' => ['auth']],function(){
+    Route::get('/logado', 'IndexLogadoController@index');
+});
