@@ -5,18 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agencia</title>
     <!-- css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{{url('assets/css/style.css')}}">
-    <!-- jquery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
-    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
-    ntegrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
     <!-- icon -->
     <link rel="icon" type="image/png" href="{{url('assets/img/favicon.png')}}">
 </head>
@@ -25,11 +20,10 @@
         <div class="container">
             <h1 class="oculta">Agencia Viagens</h1>
 
-            <div class="logo">
-                <img src="{{url('assets/img/logo.png')}}" alt="Logo Agencia" class="logo">
-            </div>
-            
             <nav class="menu">
+                <div class="logo">
+                    <img src="{{url('assets/img/logo.png')}}" alt="Logo Agencia" class="logo">
+                </div>
                 <ul>
                     <li>
                         <a href="">Home</a>
@@ -43,15 +37,26 @@
                     <li>
                         <a href="?page=about">Sobre</a>
                     </li>
+                    <div class="dropdown user-dash">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="{{url('assets/img/user-image.png')}}" alt="Mike" class="user-dashboard">
+                            <p class="user-name">User</p>
+                            <span class="caret"></span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Minhas Compras</a>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+			        </div>
                 </ul>
+                
             </nav>
 
-            <div class="button-login">
-                <button class="btn btn-primary" href="{{}}">dropdown-para perfil</button>
-            </div>
+            
+            
         </div>        
     </header>
-    <!-- final do reader -->
+    <!-- final do header -->
     <section class="slide background-parallax-slide">
         <div class="container text-center ">
             <h1 class="titulo-slide">Agência de Viagens</h1>

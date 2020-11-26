@@ -11,16 +11,16 @@
 .padding-70{padding: 0px 70px;}
 .padding-80{padding: 0px 80px;}
 /* utilidades */
-.logo{max-width: 175px;margin-top: -8px;}
+.logo{max-width: 160px;margin-top: -8px;float: left;}
 /* header */
 .header{background-color: #FFF;float: left;width: 100%;padding: 8px;box-shadow: 1px 2px #ccc;margin-bottom: 18px;}
-.button-login{float: right;color: #2B4580;}
-.logo{float: left;}
+.button-login{color: #2B4580;}
+
 .menu ul{
     list-style: none;
     float: left;
     margin-top: 27px;
-    margin-left: 35px;
+    /* margin-left: 35px; */
 }
 .menu ul li{
     display: inline;
@@ -34,6 +34,32 @@
     color: #4263B3;
     text-decoration: none;
 }
+img.user-dashboard{
+    width: 55px;
+    float: left;
+    border-radius: 2em;
+    
+}
+.user-name {
+    float: left;
+    margin: 6px 1px;
+}
+element.style {
+    position: absolute;
+    will-change: transform;
+    top: 0px;
+    left: 0px;
+    transform: translate3d(0px, 1px, 0px);
+}
+.dropdown-menu {
+}
+.user-dash {
+    float: right;
+}
+.btn-default:focus{
+    box-shadow: none;
+}
+
 /* slide */
 .slide{padding-bottom: 40px;}
 .titulo-slide{
