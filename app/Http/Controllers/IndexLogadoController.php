@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class IndexLogadoController extends Controller
 {
@@ -13,6 +14,7 @@ class IndexLogadoController extends Controller
      */
     public function index()
     {
+        //dd(Auth::user());
         return view('index-logado');
     }
 
@@ -80,5 +82,11 @@ class IndexLogadoController extends Controller
     public function destroy($id)
     {
         //
+    }
+
+    public function logout()
+    {
+        Auth::logout();
+        return redirect()->route('index');
     }
 }

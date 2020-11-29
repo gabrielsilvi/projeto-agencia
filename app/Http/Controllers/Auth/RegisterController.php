@@ -8,6 +8,9 @@ use App\User;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
+use App\UserZona;
+
+
 
 class RegisterController extends Controller
 {
@@ -23,6 +26,7 @@ class RegisterController extends Controller
     */
 
     use RegistersUsers;
+    private $usuariosCriacaoService;
 
     /**
      * Where to redirect users after registration.
@@ -47,6 +51,7 @@ class RegisterController extends Controller
      * @param  array  $data
      * @return \Illuminate\Contracts\Validation\Validator
      */
+    
     protected function validator(array $data)
     {
         return Validator::make($data, [
@@ -63,11 +68,25 @@ class RegisterController extends Controller
      * @return \App\User
      */
     protected function create(array $data)
-    {
-        return User::create([
+    {       
+               
+        $usuario =  User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
-        ]);
+        ]); 
+
+        
+        foreach ($data['id_zona'] as $novaszonas){
+            UserZona::create([
+                'id_zona' => $novaszonas,
+                'id_user' => $usuario->id,
+            ]);
+        }
+
+         
+
+     return $usuario;         
+        
     }
 }

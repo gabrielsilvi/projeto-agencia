@@ -20,7 +20,7 @@
         <div class="container">
             <h1 class="oculta">Agencia Viagens</h1>
 
-            <nav class="menu">
+            <nav class="menu row">
                 <div class="logo">
                     <img src="{{url('assets/img/logo.png')}}" alt="Logo Agencia" class="logo">
                 </div>
@@ -40,12 +40,12 @@
                     <div class="dropdown user-dash">
                         <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <img src="{{url('assets/img/user-image.png')}}" alt="Mike" class="user-dashboard">
-                            <p class="user-name">User</p>
+                        <p class="user-name"> {{Auth::user()->name}}</p>
                             <span class="caret"></span>
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             <a class="dropdown-item" href="#">Minhas Compras</a>
-                            <a class="dropdown-item" href="#">Logout</a>
+                        <a class="dropdown-item" href="{{route('logout')}}">Logout</a>
                         </div>
 			        </div>
                 </ul>

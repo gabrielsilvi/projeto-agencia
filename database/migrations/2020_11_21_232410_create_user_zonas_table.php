@@ -14,7 +14,7 @@ class CreateUserZonasTable extends Migration
     public function up()
     {
         Schema::create('user_zonas', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->integer('id_user')->unsigned();
             $table->foreign('id_user')->references('id')->on('users')->onDelete('cascade');
             $table->integer('id_zona')->unsigned();

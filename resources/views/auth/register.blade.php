@@ -60,21 +60,21 @@
                     <li class="list-group-item">
                         Frio
                         <label class="checkbox">
-                            <input type="checkbox" />
+                            <input value="1" name="id_zona[]" type="checkbox" />
                             <span class="default"></span>
                         </label>
                     </li>
                     <li class="list-group-item">
-                        Calor/Praia
+                        Sol/Praia
                         <label class="checkbox">
-                            <input type="checkbox" />
+                            <input value="3" name="id_zona[]" type="checkbox" />
                             <span class="default"></span>
                         </label>
                     </li>
                     <li class="list-group-item">
                         Saúde
                         <label class="checkbox">
-                            <input type="checkbox" />
+                            <input  value="4" name="id_zona[]" type="checkbox" />
                             <span class="default"></span>
                         </label>
                     </li>
@@ -108,6 +108,13 @@
                     </li>
                     <li class="list-group-item">
                         Esporte
+                        <label class="checkbox">
+                            <input type="checkbox" />
+                            <span class="danger"></span>
+                        </label>
+                    </li>
+                    <li class="list-group-item">
+                        Urbanismo
                         <label class="checkbox">
                             <input type="checkbox" />
                             <span class="danger"></span>
