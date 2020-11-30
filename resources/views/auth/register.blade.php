@@ -67,56 +67,56 @@
                     <li class="list-group-item">
                         Sol/Praia
                         <label class="checkbox">
-                            <input value="3" name="id_zona[]" type="checkbox" />
+                            <input value="2" name="id_zona[]" type="checkbox" />
                             <span class="default"></span>
                         </label>
                     </li>
                     <li class="list-group-item">
                         Saúde
                         <label class="checkbox">
-                            <input  value="4" name="id_zona[]" type="checkbox" />
+                            <input value="3" name="id_zona[]" type="checkbox" />
                             <span class="default"></span>
                         </label>
                     </li>
                     <li class="list-group-item">
                         Aventura
                         <label class="checkbox">
-                            <input type="checkbox" />
+                            <input value="4" name="id_zona[]" type="checkbox" />
                             <span class="default"></span>
                         </label>
                     </li>
                     <li class="list-group-item">
                         Rural
                         <label class="checkbox">
-                            <input type="checkbox" />
+                            <input value="5" name="id_zona[]" type="checkbox" />
                             <span class="default"></span>
                         </label>
                     </li>
                     <li class="list-group-item">
                         Ecoturismo
                         <label class="checkbox">
-                            <input type="checkbox" />
+                            <input value="6" name="id_zona[]" type="checkbox" />
                             <span class="danger"></span>
                         </label>
                     </li>
                     <li class="list-group-item">
                         Cultural
                         <label class="checkbox">
-                            <input type="checkbox" />
+                            <input value="7" name="id_zona[]" type="checkbox" />
                             <span class="danger"></span>
                         </label>
                     </li>
                     <li class="list-group-item">
                         Esporte
                         <label class="checkbox">
-                            <input type="checkbox" />
+                            <input value="8" name="id_zona[]" type="checkbox" />
                             <span class="danger"></span>
                         </label>
                     </li>
                     <li class="list-group-item">
                         Urbanismo
                         <label class="checkbox">
-                            <input type="checkbox" />
+                            <input value="9" name="id_zona[]" type="checkbox" />
                             <span class="danger"></span>
                         </label>
                     </li>

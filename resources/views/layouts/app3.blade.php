@@ -22,11 +22,13 @@
 
             <nav class="menu row">
                 <div class="logo">
-                    <img src="{{url('assets/img/logo.png')}}" alt="Logo Agencia" class="logo">
+                    <a href="{{route('indexlogado')}}">
+                        <img src="{{url('assets/img/logo.png')}}" alt="Logo Agencia" class="logo">
+                    </a>
                 </div>
                 <ul>
                     <li>
-                        <a href="">Home</a>
+                        <a href="{{route('indexlogado')}}">Home</a>
                     </li>
                     <li>
                         <a href="?page=package">Pacotes</a>
@@ -44,7 +46,7 @@
                             <span class="caret"></span>
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item" href="#">Minhas Compras</a>
+                        <a class="dropdown-item" href="{{route('minhascompras.index')}}">Minhas Compras</a>
                         <a class="dropdown-item" href="{{route('logout')}}">Logout</a>
                         </div>
 			        </div>

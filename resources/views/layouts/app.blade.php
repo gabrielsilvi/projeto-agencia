@@ -25,7 +25,9 @@
     <header class="header">
         <div class="container">
             <div class="logo">
-                <img src="{{url('assets/img/logo.png')}}" alt="Logo Agencia" class="logo">
+                <a href="{{route('index')}}">
+                    <img src="{{url('assets/img/logo.png')}}" alt="Logo Agencia" class="logo">
+                </a>
             </div>
             <h1>Agência de Viagens</h1>
         </div>        

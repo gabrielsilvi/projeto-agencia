@@ -14,7 +14,9 @@ Auth::routes();
 Route::get('/', 'IndexController@index')->name('index');
 
 Route::group(['prefix'=>'/', 'middleware' => ['auth']],function(){
-    Route::get('logado', 'IndexLogadoController@index');
+    Route::get('logado', 'IndexLogadoController@index')->name('indexlogado');
+    Route::resource('minhascompras','MinhasComprasController');
+
     Route::get('logout', 'IndexLogadoController@logout')->name('logout');
 
 });

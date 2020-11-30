@@ -15,7 +15,7 @@ class CreateZonasTable extends Migration
     {
         Schema::create('zonas', function (Blueprint $table) {
             $table->increments('id');
-            $table->enum('nomeZona',['frio','urbanismo','sol/praia','saude','aventura','rural','ecoturismo','cultural','esporte']);
+            $table->string('nomeZona');
             $table->timestamps();
         });
     }
