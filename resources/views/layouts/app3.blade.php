@@ -17,7 +17,7 @@
 </head>
 <body>
     <header class="header">
-        <div class="container">
+        <div class="container header-container">
             <h1 class="oculta">Agencia Viagens</h1>
 
             <nav class="menu row">
@@ -51,11 +51,7 @@
                         </div>
 			        </div>
                 </ul>
-                
-            </nav>
-
-            
-            
+            </nav> 
         </div>        
     </header>
     <!-- final do header -->
@@ -66,8 +62,60 @@
             <a href="" class="btn-saiba-mais">Saiba Mais</a>
         </div>
     </section>
-    @yield('content')
+
+    <section class="content">
+        @yield('content')
+    </section>
     <!-- final section slide -->
-    
+    <footer class="footer navbar-fixed-bottom w-auto p-3">
+        <div class="container footer-container row align-self-center">
+            <article class="col article-footer">
+                <h1 class="titulo-footer row">
+                    Agência 
+                </h1>
+                <nav class="menu-footer">
+                    <ul>
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="?page=package">Pacotes</a>
+                        </li>
+                    </ul>
+                </nav>
+            </article>
+            <article class="col article-footer">
+                <h1 class="titulo-footer row">
+                    Contato 
+                </h1>
+                <nav class="menu-footer">
+                    <ul>
+                        <li>
+                            <a href="?page=package">gabrielsv3000@hotmail.com</a>
+                        </li>
+                        <li>
+                        
+                            <a href="?page=passagens">
+                                https://github.com/gabrielsilvi
+                                <img class="icon-git"src="{{url('assets/img/icon-git-hub.png')}}" alt="Logo Git">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </article>
+            <article class="col article-footer">
+                <h1 class="titulo-footer row">
+                    Sobre o Porjeto
+                </h1>
+                <nav class="menu-footer">
+                    <ul>
+                        <li>
+                            <a href="?page=package">Saiba +</a>
+                        </li>
+                    </ul>
+                </nav>
+            </article>
+        </div>
+    </footer>
 </body>
 </html>

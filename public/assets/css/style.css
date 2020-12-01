@@ -14,13 +14,13 @@
 .logo{max-width: 160px;margin-top: -8px;float: left;}
 /* header */
 .header{background-color: #FFF;float: left;width: 100%;padding: 5px;box-shadow: 1px 2px #ccc;margin-bottom: 18px;}
+.header-container{display: flex; align-items: center; justify-content: center;}
 .button-login{color: #2B4580;}
 
 .menu ul{
     list-style: none;
     float: left;
     margin-top: 27px;
-    padding-inline-start: 0px;
 }
 .menu ul li{
     display: inline;
@@ -75,6 +75,7 @@ element.style {
     padding: 10px 20px;
 }
 
+
 /* background-parallax */
 .background-parallax-slide{background-image: url("http://localhost/agencia-modelo/img/agua.jpg");
 width: 100%;background-repeat: no-repeat;background-size: cover;box-shadow: 1px 2px #ccc;}
@@ -85,7 +86,28 @@ width: 100%;background-repeat: no-repeat;background-size: cover;box-shadow: 1px 
 }
 /* package */
 .package {}
-.card{width: 18rem;box-shadow: 1px 2px #ccc;margin-left: 50px;}
-.card-img-top{}
+
 /* login-card */
+.card{width: 18rem;box-shadow: 1px 2px #ccc;width: 200px;height: 300px;overflow: hidden;}
+.card:hover{border:solid thin #293F78;transition: all .2s ease-in-out;}
+
+.card-body p{margin-bottom:0px;font-size:12px;}
+.card-body h4{margin-bottom:8px;}
+.card-img-top{max-width: 100%;-moz-transition: all 0.3s;-webkit-transition: all 0.3s;transition: all 0.3s;}
+.card-img-top:hover{-moz-transform: scale(1.1);-webkit-transform: scale(1.1);transform: scale(1.1);}
 .card-login{width:inherit;margin-left: 0px;}
+.card-text{}
+
+/* footer */
+.footer{background: #273E74;display: flex;align-items: center;justify-content: center;margin-top: 10px;}
+.footer-container{}
+.titulo-footer{color:#fff;}
+.menu-footer {}
+.menu-footer ul{list-style:none;margin: 0px;padding: 0px;}
+.menu-footer ul li{}
+.menu-footer ul li a{color: #fff}
+.menu-footer ul li a:hover{text-decoration: none;}
+.icon-git{max-width: 28px;float: inherit;}
+.article-footer{}
+
+/* display: flex;align-items: center;justify-content: center; */
