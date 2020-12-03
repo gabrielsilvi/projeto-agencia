@@ -3,6 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\User;
+use App\Pacote;
+use App\PontoTuristico;
 
 class IndexController extends Controller
 {
@@ -13,7 +16,11 @@ class IndexController extends Controller
      */
     public function index()
     {
-        return view('index');
+        $pacotes=Pacote::all();
+        $pontos=PontoTuristico::all();
+        // $pontos=$ponto->paginate(2);
+
+        return view('index',compact('pacotes','pontos'));
     }
 
     /**
