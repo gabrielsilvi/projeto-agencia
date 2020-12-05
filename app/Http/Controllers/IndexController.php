@@ -16,11 +16,16 @@ class IndexController extends Controller
      */
     public function index()
     {
-        $pacotes=Pacote::all();
-        $pontos=PontoTuristico::all();
-        // $pontos=$ponto->paginate(2);
+        
+        $pacotes=Pacote::with('pontoturistico')->get();
+    
+        $pontos=PontoTuristico::with('cidade')->get();
 
-        return view('index',compact('pacotes','pontos'));
+        $anterior='';
+
+        // dd($pontos);
+        // $pontos=$ponto->paginate(2);
+        return view('index',compact('pacotes','pontos','anterior'));
     }
 
     /**
