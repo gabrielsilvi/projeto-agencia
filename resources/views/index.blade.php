@@ -22,7 +22,7 @@
                                 <?php $anterior=$ponto->cidade->nomeCidade ?>
                                     {{ $ponto->cidade->nomeCidade }}
                                 @endif
-                            @endif
+                            @endif      
                         @endforeach
                         <h5 class="card-title">{{ $pacote->pontoturistico->nomePontoTuristico }}</h5>
                         <strong> em até 12x</strong>

@@ -111,3 +111,30 @@ width: 100%;background-repeat: no-repeat;background-size: cover;box-shadow: 1px 
 .article-footer{}
 
 /* display: flex;align-items: center;justify-content: center; */
+/* minhas compras */
+.compras    {
+padding:1px;
+min-height: 6em;
+}
+.paisagem{
+float: left;    
+width: 10%;
+}
+.descricao{
+
+}
+.descricao ul{
+    list-style: none;
+}
+.descricao li{
+    
+}
+.localizacao{
+    margin-left: 7%;
+}
+.hr{
+    clear: both;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,.75),rgba(0,0,0,0));
+}
