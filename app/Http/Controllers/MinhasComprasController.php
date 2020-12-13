@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Pedido;
 
 class MinhasComprasController extends Controller
 {
@@ -13,7 +14,9 @@ class MinhasComprasController extends Controller
      */
     public function index()
     {
-        return view('minhas-compras');
+        $pedi=Pedido::with('usuario','pacotes')->get();
+        dd($pedi);
+        return view('minhas-compras', compact('pedi'));
     }
 
     /**

@@ -13,10 +13,11 @@
                         <p>Pacotes Para</p>
                         @foreach ($pontos as $ponto)
                             @if ($ponto->cidade->id == $pacote->pontoturistico->cidade_id )
-                            @if ($anterior == $ponto->cidade->nomeCidade)
+                            @if ($anterior == $ponto->cidade->nomeCidade && $anteriorID==$pacote->pontoturistico->id)
                                 @break
                             @else
                             <?php $anterior=$ponto->cidade->nomeCidade ?>
+                            <?php $anteriorID=$pacote->pontoturistico->id ?>
                                 {{ $ponto->cidade->nomeCidade }}
                             @endif
                             @endif      

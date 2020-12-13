@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Pacote;
+use App\PontoTuristico;
 
 class IndexLogadoController extends Controller
 {
@@ -14,8 +16,14 @@ class IndexLogadoController extends Controller
      */
     public function index()
     {
-        //dd(Auth::user());
-        return view('index-logado');
+        $pacotes=Pacote::with('pontoturistico')->get();
+    
+        $pontos=PontoTuristico::with('cidade')->get();
+
+        $anterior='';
+        $anteriorID='';
+
+        return view('index-logado', compact('pacotes', 'pontos','anterior'));
     }
 
     /**

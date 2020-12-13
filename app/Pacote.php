@@ -5,7 +5,7 @@ namespace App;
 use App\PontoTuristico;
 
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\Relations\BelongsTo;
+
 
 class Pacote extends Model
 {
@@ -18,6 +18,9 @@ class Pacote extends Model
     {
         return $this->hasOne(PontoTuristico::class, 'id');
     }
+    public function pedidos()
+    {
+        return $this->belongsTo(Pedido::class);
+    }
 
-   
 }

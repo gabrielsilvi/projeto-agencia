@@ -22,6 +22,7 @@ class IndexController extends Controller
         $pontos=PontoTuristico::with('cidade')->get();
 
         $anterior='';
+        $anteriorID='';
 
         // dd($pontos);
         // $pontos=$ponto->paginate(2);
