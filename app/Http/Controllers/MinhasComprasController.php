@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Pacote;
 use Illuminate\Http\Request;
 use App\Pedido;
 
@@ -14,9 +15,6 @@ class MinhasComprasController extends Controller
      */
     public function index()
     {
-
-        // $pedi = new Pedido;
-        // $pedi->pacotes();
         $pedi=Pedido::with('pacotes')->get();
         // dd($pedi);
         return view('minhas-compras', compact('pedi'));
@@ -24,12 +22,13 @@ class MinhasComprasController extends Controller
 
     /**
      * Show the form for creating a new resource.
-     *
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function create()
     {
-        //
+        
+        
     }
 
     /**
@@ -62,7 +61,16 @@ class MinhasComprasController extends Controller
      */
     public function edit($id)
     {
-        //
+        $pack= Pacote::find($id);
+        // $dataPacote= $pack->id;
+        // $dataUser= auth()->user()->id;
+        
+        Pedido::create(['id_user'=>auth()->user()->id, 'id_pacote' => $pack->id]);
+        return redirect('minhascompras');
+
+
+        
+        
     }
 
     /**

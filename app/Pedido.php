@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Pedido extends Model
 {
     protected $fillable = [
-        'id','user_id','pacote_id',
+        'id','id_user','id_pacote',
     ];
 
     // public function usuario()

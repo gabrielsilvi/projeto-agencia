@@ -22,8 +22,9 @@ class IndexLogadoController extends Controller
 
         $anterior='';
         $anteriorID='';
+        $id='';
 
-        return view('index-logado', compact('pacotes', 'pontos','anterior'));
+        return view('index-logado', compact('pacotes', 'pontos','anterior','id'));
     }
 
     /**
@@ -33,7 +34,7 @@ class IndexLogadoController extends Controller
      */
     public function create()
     {
-        //
+       //
     }
 
     /**
