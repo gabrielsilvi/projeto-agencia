@@ -25,7 +25,7 @@
                         <h5 class="card-title">{{ $pacote->pontoturistico->nomePontoTuristico }}</h5>
                         <strong> em até 12x</strong>
                         <h3>R${{ $pacote->preco }} 
-                            <a href="minhascompras.create" class="link-compra">
+                            <a href="{{route('login')}}" class="link-compra">
                               <i data-feather="shopping-cart"></i>
                             </a>
                         </h3>
