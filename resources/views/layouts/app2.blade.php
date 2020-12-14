@@ -20,6 +20,8 @@
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <!-- icon -->
     <link rel="icon" type="image/png" href="{{url('assets/img/favicon.png')}}">
+    <!-- feathericons -->
+    <script src="https://unpkg.com/feather-icons"></script>
 </head>
 <body>
     <header class="header">

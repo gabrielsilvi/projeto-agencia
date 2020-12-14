@@ -14,8 +14,11 @@ class MinhasComprasController extends Controller
      */
     public function index()
     {
-        $pedi=Pedido::with('usuario','pacotes')->get();
-        dd($pedi);
+
+        // $pedi = new Pedido;
+        // $pedi->pacotes();
+        $pedi=Pedido::with('pacotes')->get();
+        // dd($pedi);
         return view('minhas-compras', compact('pedi'));
     }
 

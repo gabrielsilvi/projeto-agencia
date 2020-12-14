@@ -24,7 +24,11 @@
                         @endforeach
                         <h5 class="card-title">{{ $pacote->pontoturistico->nomePontoTuristico }}</h5>
                         <strong> em até 12x</strong>
-                        <h3>R${{ $pacote->preco }}</h3>
+                        <h3>R${{ $pacote->preco }} 
+                            <a href="" class="link-compra">
+                              <i data-feather="shopping-cart"></i>
+                            </a>
+                        </h3>
                     </div>
                 </div>
             </div>
@@ -32,7 +36,9 @@
         </div>
     </div>
     {{-- {!! $pontos->links() !!} --}}
-
+    <script>
+        feather.replace()
+    </script>
 @endsection
 
 {{-- @foreach ($pontos as $ponto)
