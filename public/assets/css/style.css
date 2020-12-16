@@ -1,6 +1,7 @@
 .oculta{font-size: 0px; margin: 0px; padding: 0px;}
-
-
+.content{
+    background-color: #F6F6F6;
+}
 /* padding */
 .padding-10{padding: 0px 10px;}
 .padding-20{padding: 0px 20px;}
@@ -110,9 +111,10 @@ width: 100%;background-repeat: no-repeat;background-size: cover;box-shadow: 1px 
 .icon-git{max-width: 28px;float: inherit;}
 .article-footer{}
 
-/* display: flex;align-items: center;justify-content: center; */
+
+
 /* minhas compras */
-.compras    {
+.compras{
 padding:1px;
 min-height: 6em;
 }
@@ -140,4 +142,7 @@ width: 10%;
 }
 .link-compra{
     color: rgb(66, 99, 179);
+}
+.empty{
+    width: 100%;
 }

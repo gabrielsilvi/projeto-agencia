@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Pacote;
 use Illuminate\Http\Request;
+use App\Pacote;
 use App\Pedido;
+use App\PontoTuristico;
 
 class MinhasComprasController extends Controller
 {
@@ -15,9 +16,14 @@ class MinhasComprasController extends Controller
      */
     public function index()
     {
-        $pedi=Pedido::with('pacotes')->get();
-        // dd($pedi);
-        return view('minhas-compras', compact('pedi'));
+        //primeiro foreach para listar apenas os pedidos do user logado e acessar seus precos pelo pacotes() da model Pedido
+        $pedidosUser=Pedido::with('pacotes')->where('id_user', auth()->user()->id)->get();
+
+        //segundo foreach dentro do primeiro para trazer apenas iformacoes visuais para retornar na view, nome do ponto
+        $nomePonto=Pacote::with('pontoturistico')->get();
+
+        // dd($pedidosUser);
+        return view('minhas-compras', compact('pedidosUser'));
     }
 
     /**
@@ -27,8 +33,7 @@ class MinhasComprasController extends Controller
      */
     public function create()
     {
-        
-        
+        //        
     }
 
     /**
