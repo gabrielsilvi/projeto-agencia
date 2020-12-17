@@ -17,7 +17,7 @@ class Pedido extends Model
 
     public function pacotes()
     {
-        return $this->hasMany(Pacote::class,'id','id_pacote');
+        return $this->hasMany(Pacote::class,'id','id_pacote','preco',);
     }
     
 

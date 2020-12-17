@@ -20,10 +20,10 @@ class MinhasComprasController extends Controller
         $pedidosUser=Pedido::with('pacotes')->where('id_user', auth()->user()->id)->get();
 
         //segundo foreach dentro do primeiro para trazer apenas iformacoes visuais para retornar na view, nome do ponto
-        $nomePonto=Pacote::with('pontoturistico')->get();
+        $nomesPonto=Pacote::with('pontoturistico')->get();
 
         // dd($pedidosUser);
-        return view('minhas-compras', compact('pedidosUser'));
+        return view('minhas-compras', compact('pedidosUser','nomesPonto'));
     }
 
     /**

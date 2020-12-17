@@ -10,9 +10,21 @@
                     <div class="localizacao">
                         <ul>
                             <strong>
-                                <li>Ponto Turistico, Cidade. <font color="red">20/20/2020</font>
+                                <li>
+                                    @foreach ($nomesPonto as $nomePonto)
+                                        @if ($nomePonto->id == $pedidoUser->id_pacote)
+                                            {{ $nomePonto->pontoturistico->nomePontoTuristico }}
+                                        @endif
+                                    @endforeach
+                                    <font color="red">20/20/2020</font>
                                 </li>
-                                <li>12x de R$100.00</li>
+                                <li>12x de R$
+                                    @foreach ($nomesPonto as $nomePonto)
+                                        @if ($nomePonto->id == $pedidoUser->id_pacote)
+                                            {{ $nomePonto->preco }}
+                                        @endif
+                                    @endforeach
+                                </li>
                             </strong>
                             <h6>Para Sua Viagem:</h6>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
@@ -28,8 +40,8 @@
         @empty
             <img class="empty" src="{{ url('assets/img/cart-empty.png') }}" alt="">
         @endforelse
-        <div class="total">
+        {{-- <div class="total">
             <h2>Total: R$100.00</h2>
-        </div>
+        </div> --}}
     </div>
 @endsection
