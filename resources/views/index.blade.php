@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="container">
-        <h1>Mais Vistos</h1>
+        <h1>Mais Visitados</h1>
         <div class="row">
             @foreach ($pacotes as $pacote)
             <div class="col-sm" style="margin-left: 10px">
