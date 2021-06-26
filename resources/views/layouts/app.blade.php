@@ -33,7 +33,7 @@
         </div>        
     </header>
     <!-- final do header -->
-    <section class="slide background-parallax-slide">
+    <section class="background-parallax-slide">
         <div class="container text-center ">
             <h1 class="titulo-slide">Agência de Viagens</h1>
             <p class="descricao-slide">Agência de viagens utilizando mecanismo de inteligência artificial para sistema de recomendação</p>

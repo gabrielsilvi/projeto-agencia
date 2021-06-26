@@ -62,7 +62,7 @@ element.style {
 }
 
 /* slide */
-.slide{padding-bottom: 40px;}
+/* .slide{padding-bottom: 40px;} */
 .titulo-slide{
     color: #fff;
 }
@@ -78,8 +78,8 @@ element.style {
 
 
 /* background-parallax */
-.background-parallax-slide{background-image: url("http://localhost/agencia-modelo/img/agua.jpg");
-width: 100%;background-repeat: no-repeat;background-size: cover;box-shadow: 1px 2px #ccc;}
+.background-parallax-slide{background-image: url("../img/agua.jpg");
+width: 100%;background-repeat: no-repeat;background-size: cover;box-shadow: 1px 2px #ccc;padding-bottom: 2%;}
 .slide a:hover{text-decoration: none;}
 /* about */
 .about p{
