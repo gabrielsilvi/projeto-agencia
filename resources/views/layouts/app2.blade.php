@@ -45,9 +45,9 @@
                     <li>
                         <a href="?page=passagens">Passagens</a>
                     </li>
-                    <li>
+                    {{-- <li>
                         <a href="?page=about">Sobre</a>
-                    </li>
+                    </li> --}}
                 </ul>
             </nav>
 
@@ -61,7 +61,7 @@
         <div class="container text-center">
             <h1 class="titulo-slide">Agência de Viagens</h1>
             <p class="descricao-slide">Agência de viagens utilizando mecano de inteligência artificial para sistema de recomendação</p>
-            <a href="" class="btn-saiba-mais">Saiba Mais</a>
+            {{-- <a href="" class="btn-saiba-mais">Saiba Mais</a> --}}
         </div>
     </section>
     <!-- final do header -->
@@ -113,6 +113,9 @@
                     <ul>
                         <li>
                             <a href="?page=package">Saiba +</a>
+                        </li>
+                        <li>
+                            <a href="?page=package">Política de Privacidade</a>
                         </li>
                     </ul>
                 </nav>
