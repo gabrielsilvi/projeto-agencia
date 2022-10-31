@@ -1,0 +1,28 @@
+ 
+INSERT INTO agencia.estados (nomeEstado, sigla, created_at, updated_at) VALUES( "Acre", "AC", null, null);
+INSERT INTO agencia.estados (nomeEstado, sigla, created_at, updated_at) VALUES( "Alagoas", "AL", null, null);
+INSERT INTO agencia.estados (nomeEstado, sigla, created_at, updated_at) VALUES( "Amazonas", "AM", null, null);
+INSERT INTO agencia.estados (nomeEstado, sigla, created_at, updated_at) VALUES( "Amapá", "AP", null, null);
+INSERT INTO agencia.estados (nomeEstado, sigla, created_at, updated_at) VALUES( "Bahia", "BA", null, null);
+INSERT INTO agencia.estados (nomeEstado, sigla, created_at, updated_at) VALUES( "Ceará", "CE", null, null);
+INSERT INTO agencia.estados (nomeEstado, sigla, created_at, updated_at) VALUES( "Distrito Federal", "DF", null, null);
+INSERT INTO agencia.estados (nomeEstado, sigla, created_at, updated_at) VALUES( "Espírito Santo", "ES", null, null);
+INSERT INTO agencia.estados (nomeEstado, sigla, created_at, updated_at) VALUES( "Goiás", "GO", null, null);
+INSERT INTO agencia.estados (nomeEstado, sigla, created_at, updated_at) VALUES( "Maranhão", "MA", null, null);
+INSERT INTO agencia.estados (nomeEstado, sigla, created_at, updated_at) VALUES( "Minas Gerais", "MG", null, null);
+INSERT INTO agencia.estados (nomeEstado, sigla, created_at, updated_at) VALUES( "Mato Grosso do Sul", "MS", null, null);
+INSERT INTO agencia.estados (nomeEstado, sigla, created_at, updated_at) VALUES( "Mato Grosso", "MT", null, null);
+INSERT INTO agencia.estados (nomeEstado, sigla, created_at, updated_at) VALUES( "Pará", "PA", null, null);
+INSERT INTO agencia.estados (nomeEstado, sigla, created_at, updated_at) VALUES( "Paraíba", "PB", null, null);
+INSERT INTO agencia.estados (nomeEstado, sigla, created_at, updated_at) VALUES( "Pernambuco", "PE", null, null);
+INSERT INTO agencia.estados (nomeEstado, sigla, created_at, updated_at) VALUES( "Piauí", "PI", null, null);
+INSERT INTO agencia.estados (nomeEstado, sigla, created_at, updated_at) VALUES( "Paraná", "PR", null, null);
+INSERT INTO agencia.estados (nomeEstado, sigla, created_at, updated_at) VALUES( "Rio de Janeiro", "RJ", null, null);
+INSERT INTO agencia.estados (nomeEstado, sigla, created_at, updated_at) VALUES( "Rio Grande do Norte", "RN", null, null);
+INSERT INTO agencia.estados (nomeEstado, sigla, created_at, updated_at) VALUES( "Rondônia", "RO", null, null);
+INSERT INTO agencia.estados (nomeEstado, sigla, created_at, updated_at) VALUES( "Roraima", "RR", null, null);
+INSERT INTO agencia.estados (nomeEstado, sigla, created_at, updated_at) VALUES( "Rio Grande do Sul", "RS", null, null);
+INSERT INTO agencia.estados (nomeEstado, sigla, created_at, updated_at) VALUES( "Santa Catarina", "SC", null, null);
+INSERT INTO agencia.estados (nomeEstado, sigla, created_at, updated_at) VALUES( "Sergipe", "SE", null, null);
+INSERT INTO agencia.estados (nomeEstado, sigla, created_at, updated_at) VALUES( "São Paulo", "SP", null, null);
+INSERT INTO agencia.estados (nomeEstado, sigla, created_at, updated_at) VALUES( "Tocantins", "TO", null, null);
